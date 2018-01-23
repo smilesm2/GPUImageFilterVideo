@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3FE05EA20157B0F0076E6ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE05E920157B0F0076E6ED /* AppDelegate.swift */; };
+		E3FE05EC20157B0F0076E6ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE05EB20157B0F0076E6ED /* FirstViewController.swift */; };
+		E3FE05F120157B0F0076E6ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FE05EF20157B0F0076E6ED /* Main.storyboard */; };
+		E3FE05F320157B0F0076E6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FE05F220157B0F0076E6ED /* Assets.xcassets */; };
+		E3FE05F620157B0F0076E6ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FE05F420157B0F0076E6ED /* LaunchScreen.storyboard */; };
+		E3FE060120157B0F0076E6ED /* FilterVideoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE060020157B0F0076E6ED /* FilterVideoTestTests.swift */; };
+		E3FE060C20157B0F0076E6ED /* FilterVideoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE060B20157B0F0076E6ED /* FilterVideoTestUITests.swift */; };
+		E3FE06222015BE830076E6ED /* CustomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E3FE06212015BE830076E6ED /* CustomShader.fsh */; };
+		E3FE06292015D1B60076E6ED /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FE061C20157B400076E6ED /* GPUImage.framework */; };
+		E3FE062A2015D1B60076E6ED /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3FE061C20157B400076E6ED /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3FE062D2015E2C30076E6ED /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE062C2015E2C30076E6ED /* CustomPhotoAlbum.swift */; };
+		E3FE062F2015EA010076E6ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E3FE062E2015EA010076E6ED /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3FE05FD20157B0F0076E6ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3FE05DE20157B0F0076E6ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3FE05E520157B0F0076E6ED;
+			remoteInfo = FilterVideoTest;
+		};
+		E3FE060820157B0F0076E6ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3FE05DE20157B0F0076E6ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3FE05E520157B0F0076E6ED;
+			remoteInfo = FilterVideoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3FE062B2015D1B60076E6ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E3FE062A2015D1B60076E6ED /* GPUImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E3FE05E620157B0F0076E6ED /* GPUImageFilterVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImageFilterVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FE05E920157B0F0076E6ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3FE05EB20157B0F0076E6ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E3FE05F020157B0F0076E6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3FE05F220157B0F0076E6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3FE05F520157B0F0076E6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3FE05F720157B0F0076E6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FE05FC20157B0F0076E6ED /* GPUImageFilterVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPUImageFilterVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FE060020157B0F0076E6ED /* FilterVideoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVideoTestTests.swift; sourceTree = "<group>"; };
+		E3FE060220157B0F0076E6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FE060720157B0F0076E6ED /* GPUImageFilterVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPUImageFilterVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FE060B20157B0F0076E6ED /* FilterVideoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVideoTestUITests.swift; sourceTree = "<group>"; };
+		E3FE060D20157B0F0076E6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FE061C20157B400076E6ED /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = FilterVideoTest/GPUImage.framework; sourceTree = "<group>"; };
+		E3FE06212015BE830076E6ED /* CustomShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CustomShader.fsh; sourceTree = "<group>"; };
+		E3FE062C2015E2C30076E6ED /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoAlbum.swift; sourceTree = "<group>"; };
+		E3FE062E2015EA010076E6ED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3FE05E320157B0F0076E6ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FE06292015D1B60076E6ED /* GPUImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FE05F920157B0F0076E6ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FE060420157B0F0076E6ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3FE05DD20157B0F0076E6ED = {
+			isa = PBXGroup;
+			children = (
+				E3FE062E2015EA010076E6ED /* README.md */,
+				E3FE05E820157B0F0076E6ED /* FilterVideoTest */,
+				E3FE05FF20157B0F0076E6ED /* FilterVideoTestTests */,
+				E3FE060A20157B0F0076E6ED /* FilterVideoTestUITests */,
+				E3FE05E720157B0F0076E6ED /* Products */,
+				E3FE061920157B300076E6ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3FE05E720157B0F0076E6ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE05E620157B0F0076E6ED /* GPUImageFilterVideo.app */,
+				E3FE05FC20157B0F0076E6ED /* GPUImageFilterVideoTests.xctest */,
+				E3FE060720157B0F0076E6ED /* GPUImageFilterVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3FE05E820157B0F0076E6ED /* FilterVideoTest */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE062C2015E2C30076E6ED /* CustomPhotoAlbum.swift */,
+				E3FE06212015BE830076E6ED /* CustomShader.fsh */,
+				E3FE05E920157B0F0076E6ED /* AppDelegate.swift */,
+				E3FE05EB20157B0F0076E6ED /* FirstViewController.swift */,
+				E3FE05EF20157B0F0076E6ED /* Main.storyboard */,
+				E3FE05F220157B0F0076E6ED /* Assets.xcassets */,
+				E3FE05F420157B0F0076E6ED /* LaunchScreen.storyboard */,
+				E3FE05F720157B0F0076E6ED /* Info.plist */,
+			);
+			path = FilterVideoTest;
+			sourceTree = "<group>";
+		};
+		E3FE05FF20157B0F0076E6ED /* FilterVideoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE060020157B0F0076E6ED /* FilterVideoTestTests.swift */,
+				E3FE060220157B0F0076E6ED /* Info.plist */,
+			);
+			path = FilterVideoTestTests;
+			sourceTree = "<group>";
+		};
+		E3FE060A20157B0F0076E6ED /* FilterVideoTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE060B20157B0F0076E6ED /* FilterVideoTestUITests.swift */,
+				E3FE060D20157B0F0076E6ED /* Info.plist */,
+			);
+			path = FilterVideoTestUITests;
+			sourceTree = "<group>";
+		};
+		E3FE061920157B300076E6ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE061C20157B400076E6ED /* GPUImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3FE05E520157B0F0076E6ED /* GPUImageFilterVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3FE061020157B0F0076E6ED /* Build configuration list for PBXNativeTarget "GPUImageFilterVideo" */;
+			buildPhases = (
+				E3FE05E220157B0F0076E6ED /* Sources */,
+				E3FE05E320157B0F0076E6ED /* Frameworks */,
+				E3FE05E420157B0F0076E6ED /* Resources */,
+				E3FE062B2015D1B60076E6ED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPUImageFilterVideo;
+			productName = FilterVideoTest;
+			productReference = E3FE05E620157B0F0076E6ED /* GPUImageFilterVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3FE05FB20157B0F0076E6ED /* GPUImageFilterVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3FE061320157B0F0076E6ED /* Build configuration list for PBXNativeTarget "GPUImageFilterVideoTests" */;
+			buildPhases = (
+				E3FE05F820157B0F0076E6ED /* Sources */,
+				E3FE05F920157B0F0076E6ED /* Frameworks */,
+				E3FE05FA20157B0F0076E6ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3FE05FE20157B0F0076E6ED /* PBXTargetDependency */,
+			);
+			name = GPUImageFilterVideoTests;
+			productName = FilterVideoTestTests;
+			productReference = E3FE05FC20157B0F0076E6ED /* GPUImageFilterVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3FE060620157B0F0076E6ED /* GPUImageFilterVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3FE061620157B0F0076E6ED /* Build configuration list for PBXNativeTarget "GPUImageFilterVideoUITests" */;
+			buildPhases = (
+				E3FE060320157B0F0076E6ED /* Sources */,
+				E3FE060420157B0F0076E6ED /* Frameworks */,
+				E3FE060520157B0F0076E6ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3FE060920157B0F0076E6ED /* PBXTargetDependency */,
+			);
+			name = GPUImageFilterVideoUITests;
+			productName = FilterVideoTestUITests;
+			productReference = E3FE060720157B0F0076E6ED /* GPUImageFilterVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3FE05DE20157B0F0076E6ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "謝知晉";
+				TargetAttributes = {
+					E3FE05E520157B0F0076E6ED = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E3FE05FB20157B0F0076E6ED = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E3FE05E520157B0F0076E6ED;
+					};
+					E3FE060620157B0F0076E6ED = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E3FE05E520157B0F0076E6ED;
+					};
+				};
+			};
+			buildConfigurationList = E3FE05E120157B0F0076E6ED /* Build configuration list for PBXProject "GPUImageFilterVideo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3FE05DD20157B0F0076E6ED;
+			productRefGroup = E3FE05E720157B0F0076E6ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3FE05E520157B0F0076E6ED /* GPUImageFilterVideo */,
+				E3FE05FB20157B0F0076E6ED /* GPUImageFilterVideoTests */,
+				E3FE060620157B0F0076E6ED /* GPUImageFilterVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3FE05E420157B0F0076E6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FE05F620157B0F0076E6ED /* LaunchScreen.storyboard in Resources */,
+				E3FE06222015BE830076E6ED /* CustomShader.fsh in Resources */,
+				E3FE062F2015EA010076E6ED /* README.md in Resources */,
+				E3FE05F320157B0F0076E6ED /* Assets.xcassets in Resources */,
+				E3FE05F120157B0F0076E6ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FE05FA20157B0F0076E6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FE060520157B0F0076E6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3FE05E220157B0F0076E6ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FE062D2015E2C30076E6ED /* CustomPhotoAlbum.swift in Sources */,
+				E3FE05EA20157B0F0076E6ED /* AppDelegate.swift in Sources */,
+				E3FE05EC20157B0F0076E6ED /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FE05F820157B0F0076E6ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FE060120157B0F0076E6ED /* FilterVideoTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FE060320157B0F0076E6ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FE060C20157B0F0076E6ED /* FilterVideoTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3FE05FE20157B0F0076E6ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3FE05E520157B0F0076E6ED /* GPUImageFilterVideo */;
+			targetProxy = E3FE05FD20157B0F0076E6ED /* PBXContainerItemProxy */;
+		};
+		E3FE060920157B0F0076E6ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3FE05E520157B0F0076E6ED /* GPUImageFilterVideo */;
+			targetProxy = E3FE060820157B0F0076E6ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3FE05EF20157B0F0076E6ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3FE05F020157B0F0076E6ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3FE05F420157B0F0076E6ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3FE05F520157B0F0076E6ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3FE060E20157B0F0076E6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3FE060F20157B0F0076E6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3FE061120157B0F0076E6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FilterVideoTest",
+				);
+				INFOPLIST_FILE = FilterVideoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ty.GPUImageFilterVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3FE061220157B0F0076E6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FilterVideoTest",
+				);
+				INFOPLIST_FILE = FilterVideoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ty.GPUImageFilterVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3FE061420157B0F0076E6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T222VDAU3;
+				INFOPLIST_FILE = FilterVideoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ty.FilterVideoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPUImageFilterVideo.app/GPUImageFilterVideo";
+			};
+			name = Debug;
+		};
+		E3FE061520157B0F0076E6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T222VDAU3;
+				INFOPLIST_FILE = FilterVideoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ty.FilterVideoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPUImageFilterVideo.app/GPUImageFilterVideo";
+			};
+			name = Release;
+		};
+		E3FE061720157B0F0076E6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T222VDAU3;
+				INFOPLIST_FILE = FilterVideoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ty.FilterVideoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FilterVideoTest;
+			};
+			name = Debug;
+		};
+		E3FE061820157B0F0076E6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6T222VDAU3;
+				INFOPLIST_FILE = FilterVideoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ty.FilterVideoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FilterVideoTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3FE05E120157B0F0076E6ED /* Build configuration list for PBXProject "GPUImageFilterVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FE060E20157B0F0076E6ED /* Debug */,
+				E3FE060F20157B0F0076E6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3FE061020157B0F0076E6ED /* Build configuration list for PBXNativeTarget "GPUImageFilterVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FE061120157B0F0076E6ED /* Debug */,
+				E3FE061220157B0F0076E6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3FE061320157B0F0076E6ED /* Build configuration list for PBXNativeTarget "GPUImageFilterVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FE061420157B0F0076E6ED /* Debug */,
+				E3FE061520157B0F0076E6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3FE061620157B0F0076E6ED /* Build configuration list for PBXNativeTarget "GPUImageFilterVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FE061720157B0F0076E6ED /* Debug */,
+				E3FE061820157B0F0076E6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3FE05DE20157B0F0076E6ED /* Project object */;
+}
